@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form addfieldpath="/administrator/components/com_borggique/models/fields">
+    <fieldset name="general">
+		<field name="title"
+               type="text"
+               label="JGLOBAL_TITLE"
+               description="COM_BORGGIQUE_TITLE_DESC"
+               class="inputbox"
+               size="30"
+               required="true"
+        />
+		<field name="alias"
+               type="text"
+               label="JFIELD_ALIAS_LABEL"
+               description="JFIELD_ALIAS_DESC"
+               class="inputbox"
+               size="30"
+        />
+		<field id="published"
+               name="published"
+               type="list"
+               label="JGLOBAL_STATE"
+               description="JFIELD_PUBLISHED_DESC"
+               class="inputbox"
+               size="1"
+               default="1"
+        >
+            <option value="1">
+                JPUBLISHED</option>
+            <option value="0">
+                JUNPUBLISHED</option>			
+        </field>
+		<field name="id"
+               type="text"
+               label="JGLOBAL_FIELD_ID_LABEL"
+               description="JGLOBAL_FIELD_ID_DESC"
+               size="10"
+               default="0"
+               readonly="true"
+               class="readonly"
+        />
+		<field name="checked_out"
+			type="hidden"
+			filter="unset"
+		/>
+
+		<field name="checked_out_time"
+			type="hidden"
+			filter="unset"
+		/>
+    </fieldset>
+		<fields name="params" >
+			<fieldset name="general_settings" label="General">
+				<field name="lib" type="list" label="COM_BORGGIQUE_LIB_LABEL" description="COM_BORGGIQUE_LIB_DESC">
+			       <option value="0">No</option>
+			       <option value="1">Yes</option>
+	            </field>
+				<field name="image_width" 
+                   type="text" 
+                   label="COM_BORGGIQUE_WIDTH_LABEL"
+                   default="200"
+                   filter="integer"
+                   description="COM_BORGGIQUE_WIDTH_DESC">
+                </field>
+			    <field name="image_height" 
+                   type="text" 
+                   label="COM_BORGGIQUE_HEIGHT_LABEL"
+                   default="200"
+                   filter="integer" 
+                   description="COM_BORGGIQUE_HEIGHT_DESC">
+                </field>
+				<field name="rows" 
+                   type="text" 
+                   label="COM_BORGGIQUE_ROWS_LABEL"
+                   default="5"
+                   filter="integer" 
+                   description="COM_BORGGIQUE_ROWS_DESC">
+                </field>
+				<field name="cols" 
+                   type="text" 
+                   label="COM_BORGGIQUE_COLS_LABEL"
+                   default="10"
+                   filter="integer" 
+                   description="COM_BORGGIQUE_COLS_DESC">
+                </field>
+				<field name="cubespeed" 
+                   type="text" 
+                   label="COM_BORGGIQUE_CUBESPEED_LABEL"
+                   default="3000"
+                   filter="integer" 
+                   description="COM_BORGGIQUE_CUBESPEED_DESC">
+                </field>
+				<field name="imagebuildspeed" 
+                   type="text" 
+                   label="COM_BORGGIQUE_IMAGEBUILDSPEED_LABEL"
+                   default="500"
+                   filter="integer" 
+                   description="COM_BORGGIQUE_IMAGEBUILDSPEED_DESC">
+                </field>
+				<field name="axis" type="list" label="COM_BORGGIQUE_AXIS_LABEL" description="COM_BORGGIQUE_AXIS_DESC">
+			       <option value="X">X</option>
+			       <option value="Y">Y</option>
+	            </field>
+				</fieldset>
+				<fieldset name="apperance_settings" label="Appearance">				
+				<field name="cubebackgroundcolor" 
+                   type="color" 
+                   label="COM_BORGGIQUE_CUBE_BACKGROUND_COLOR_LABEL"
+                   default="#000000"
+                   description="COM_BORGGIQUE_CUBE_BACKGROUND_COLOR_DESC">
+                </field>
+				<field name="dimensionbackgroundcolor" 
+                   type="color" 
+                   label="COM_BORGGIQUE_DIMENSION_BACKGROUND_COLOR_LABEL"
+                   default="#ff8c00"
+                   description="COM_BORGGIQUE_DIMENSION_BACKGROUND_COLOR_DESC">
+                </field>
+			</fieldset>
+			<fieldset name="slides">
+		        <field name="slides" type="myslidesmanager" label="COM_BORGGIQUE_FIELD_SLIDES_LABEL" description="COM_BORGGIQUE_FIELD_SLIDES_DESC" filter="raw" default="[{}]" />
+	        </fieldset>
+		</fields>
+
+
+</form>
