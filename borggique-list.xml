@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extensionset name="Packages Borggique" description="Packages Borggique">
+   <extension name="pkg_borggique" element="pkg_borggique" type="package" version="1.0.0" detailsurl="http://www.lord121.ir/myextenstions/myextensions.xml"/>
+</extensionset>
