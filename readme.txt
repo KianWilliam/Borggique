@@ -8,7 +8,7 @@ The license is GNU/GPLv3.
 It is written for joomla 3.x,
 In comment part for special characters add backslash(\) before them.
 you may view and download the component at:
-demo : http://www.richsky.lord121.ir
+demo : http://www.extensions.lord121.ir/mycomponents/borggique-demo.html
 download : http://www.extensions.lord121.ir/mycomponents/borggique-download.html
 In case of any problem contact me at:
 mezmer121@gmail.com
